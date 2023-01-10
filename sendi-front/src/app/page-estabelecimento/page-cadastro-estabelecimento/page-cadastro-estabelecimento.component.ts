@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, MinLengthValidator, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-page-cadastro-estabelecimento',
@@ -7,8 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageCadastroEstabelecimentoComponent implements OnInit {
 
-  constructor() { }
-  readonly imagemCadastro = '../../../assets/images/imagem-cadastro-estabelecimento.png';
+
+
+  constructor() {
+
+  }
   readonly LOGO = '../../../assets/images/logo.png';
 
 

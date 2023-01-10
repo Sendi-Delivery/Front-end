@@ -6,108 +6,142 @@
     margin: 0;
     .image{
         flex: 1;
-        background: url(../../../../assets/images/imagem-cadastro-estabelecimento.png) no-repeat; /*aplica a imagem*/
+        background: url(../../../assets/images/imagem-cadastro-estabelecimento.png) no-repeat; /*aplica a imagem*/
         background-size: cover;
         width: 100%;
         height: 100%;
+        text-align: center;
         .logo{
-            width: 16vw;
-            margin-left: 6vw;
-            margin-top: 7vh;
+            width: 17vw;
+            margin-top: 8vh;
         }
         .texto{
+           .texto1{
+            text-align: center;
+            margin: 1vw;
+            padding: 2vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 25px;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 59px rgba(0, 0, 0, 0.25);
+            font-size: 5vh;
+            width: auto;
+            height: auto;
+            margin-top: 10vh;
+           }
+           .texto2{
             text-align: center;
             margin: 1vw;
             font-style: normal;
             font-weight: 700;
             line-height: 20px;
             color: #FFFFFF;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            font-size: 2.7vh;
+            text-shadow: 0px 4px 80px rgba(0, 0, 0, 0.4);
+            font-size: 3vh;
             width: auto;
             height: auto;
-            margin-top: 30%;
+            margin-top: 20vh;
+           }
+
         }
         }
     .form-control{
         flex: 2;
+        .moto{
+          margin-left: 15vw;
+          position: absolute;
+          margin-top: 4vh;
+          margin-left: 25vw;
+          width: 8vw;
+         }
         .toolbar{
+          z-index: 1;
             width: 80%;
             height: 15%;
+            margin-top: 5vh;
             .toolbar-span{
-                justify-content: space-around;
-                display: flex; 
+                justify-content: start;
+                display: flex;
                 span{
                     font-style: normal;
-                    font-weight: 700;
-                    font-size: 3vh;
+                    font-weight: bold;
+                    font-size: 3.5vh;
                     line-height: 50px;
-
+                    margin-left: 2vw;
                     color: #FF4700;
                 }
             }
-            .barra{
-                justify-content: space-around;
-                display: flex; 
-                background-color: #E28100;
+            .toolbar-bottom{
+              width: 55%;
+              height: 85%;
+              display: flex;
+              .barra{
+                width: 50%;
+                justify-content: start;
+                display: flex;
+                background-color: #FE8E06;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 5px;
-                height: 30%;
+                border-radius: 0px 5px 5px 0px;
+                height: 35%;
                 span{
-                    background-color: #FFFFFF;
-                    border-radius: 40px;
                     padding: 0;
-                    width: 23px;
-                    height: 23px;
-                    margin: auto;
+                    margin-left: 2vw;
+                    color: #FFf;
                 }
-                .font-span{
-                    color: #979797;
-                }
-                .font-span-select{
-                    color: #1CED31;
-                }
+             }
+
             }
+
         }
         form{
+          z-index: 1;
             width: 100%;
-            height: 85%;
+            height: 80%;
             display: flex;
             .form-esquerda{
                 flex: 1;
                 width: 100%;
                 height: 90%;
                 margin-top: 5%;
-                .form-input{             
+                .form-input{
                     height: 10%;
                     width: auto;
-                    margin: 2vh;
+                    margin: 4vh;
                     display: block;
                     justify-content: start;
-                    
+                    .font-sec{
+                      color: #FFF;
+                      font-style: normal;
+                      font-weight: 700;
+                    }
                     input{
                         display: block;
                         width: 67%;
                         height: 25px;
                         border-radius: 5px;
                         background: #FFFFFF;
-                        border: 1px solid #373435;
+                        border: 1px solid #999999;
                         margin: auto;
+                        outline:none;
                     }
+
                     label{
                         display: block;
                         margin-left: 17%;
                         width: auto;
                         font-style: normal;
                         font-weight: 700;
-                        color: #FF4700;
+                        color: #E28100;
+                        font-size: 2.7vh;
+
                     }
 
                 }
                 .form-input-endereco{
                     height: 10%;
                     width: auto;
-                    margin: 2vh;
+                    margin: 4vh;
                     display: flex;
                     .div-form-endereco{
                         display: block;
@@ -121,6 +155,8 @@
                             border: 1px solid #373435;
                             float: right;
                             margin-right: 2px;
+                            border: 1px solid #999999;
+                            outline:none;
                             }
                         label{
                             display: block;
@@ -128,20 +164,27 @@
                             margin-left: 20%;
                             font-style: normal;
                             font-weight: 700;
-                            color: #FF4700;
+                            color: #E28100;
+                            font-size: 2.7vh;
                         }
                         width: 85%;
                     }
                     .div-form-numero{
                         display: block;
+                        .font-sec{
+                          color: #FFF;
+                          font-style: normal;
+                          font-weight: 700;
+                        }
                         input{
                             display: block;
                             width:100%;
                             height: 25px;
                             border-radius: 5px;
                             background: #FFFFFF;
-                            border: 1px solid #373435;
+                            border: 1px solid #999999;
                             margin: auto;
+                            outline:none;
                         }
                         label{
                             display: block;
@@ -149,7 +192,9 @@
                             width: auto;
                             font-style: normal;
                             font-weight: 700;
-                            color: #FF4700;
+                            color: #E28100;
+                            font-size: 2.7vh;
+
                         }
                         width: 15%;
                     }
@@ -161,13 +206,19 @@
                 width: auto;
                 height: 80%;
                 margin-top: 5%;
-                .form-input{             
+                margin-left: 1vw;
+                .form-input{
+                  .font-sec{
+                    color: #FFF;
+                    font-style: normal;
+                    font-weight: 700;
+                  }
                     height: 10%;
                     width: auto;
-                    margin: 2vh;
+                    margin: 4vh;
                     display: block;
                     justify-content: start;
-                    
+
                     input{
                         display: block;
                         width: 67%;
@@ -176,6 +227,8 @@
                         background: #FFFFFF;
                         border: 1px solid #373435;
                         margin: auto;
+                        border: 1px solid #999999;
+                        outline:none;
                     }
                     textarea{
                         display: block;
@@ -184,7 +237,9 @@
                         border-radius: 5px;
                         background: #FFFFFF;
                         border: 1px solid #373435;
-                        margin: auto; 
+                        margin: auto;
+                        border: 1px solid #999999;
+                        outline:none;
                     }
                     label{
                         display: block;
@@ -192,24 +247,36 @@
                         width: auto;
                         font-style: normal;
                         font-weight: 700;
-                        color: #FF4700;
+                        color: #E28100;
+                        font-size: 2.7vh;
                     }
 
                 }
                 .form-button{
-                    margin-top: 50%;
+                    margin-top: 28%;
                     button{
                         float: right;
-                        margin-right: 10%;
-                        background: #E28100;
-                        border: 1px solid #E28100;
+                        margin-right: 20%;
+                        background: #FF4700;
+                        border: 1px solid #FF4700;
                         border-radius: 5px;
                         height: 5vh;
                         width: 7vw;
                         color: #fff;
                     }
-                }              
+                }
             }
         }
+
+    }
+    .poligono{
+      background-color:#E28100;
+      clip-path: polygon(100% 10%, 100% 30%, 100% 74%, 94% 96%, 59% 100%, 28% 100%);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
     }
 }
