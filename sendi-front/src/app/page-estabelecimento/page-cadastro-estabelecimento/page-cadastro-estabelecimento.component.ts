@@ -1,23 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, MinLengthValidator, Validators } from '@angular/forms';
-
+import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { NgFormularioValidacoes } from 'src/app/shared/validacoes/ng-formulario-validacoes';
 
 @Component({
   selector: 'app-page-cadastro-estabelecimento',
   templateUrl: './page-cadastro-estabelecimento.component.html',
   styleUrls: ['./page-cadastro-estabelecimento.component.scss']
 })
-export class PageCadastroEstabelecimentoComponent implements OnInit {
 
+export class PageCadastroEstabelecimentoComponent {
 
-
-  constructor() {
-
-  }
   readonly LOGO = '../../../assets/images/logo.png';
+  public formulario: FormGroup;
 
-
-  ngOnInit(): void {
+  constructor(private formBuilder : FormBuilder) {
+    this.formulario = formBuilder.group({
+      razaoSocial:[null, [Validators.required, Validators.maxLength(200)]],
+      cpfCnpj:[null, [Validators.required], NgFormularioValidacoes.identificadorCnpjCpf]
+    });
   }
 
 }
